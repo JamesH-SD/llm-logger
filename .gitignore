@@ -1,2 +1,4 @@
 // placeholder content
 .env
+.env.local
+node_modules/
