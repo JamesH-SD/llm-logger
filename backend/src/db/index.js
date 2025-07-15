@@ -8,7 +8,9 @@ const pool = new Pool({
   database: process.env.DB_NAME,
   password: process.env.DB_PASS,
   port: 5432,
-  ssl: { rejectUnauthorized: false }
+  ssl: {
+    rejectUnauthorized: false, // Accept self-signed certs
+  },
 });
 
 module.exports = pool;
